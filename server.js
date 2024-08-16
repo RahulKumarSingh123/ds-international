@@ -68,7 +68,7 @@ async function login(req, res) {
             email: req.body.email,
             password: req.body.password
         })) {
-        res.sendFile(path.join(__dirname, "/view/index.html"));
+        res.sendFile(path.join(__dirname, "/views/responsive.html"));
     } else {
         res.send('User not reistered');
     }
